@@ -9,12 +9,14 @@ let quantity = 0 ;
 for(let i=0; i<=preferences.length;i++){
     let lover = preferences[i] - 1 
         if (lover != i) { 
-            lover = preferences [lover] - 1 
+            lover = preferences [lover] - 1
 
             if (preferences[lover] - 1 == i) { 
             
-            count++ 
+            quantity++ 
              preferences[i] = 0 
             }  
         }
-};
+    }
+    return quantity;
+}
